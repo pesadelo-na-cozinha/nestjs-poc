@@ -13,12 +13,12 @@ exports.MesasController = void 0;
 const common_1 = require("@nestjs/common");
 const mesas_service_1 = require("./mesas.service");
 let MesasController = class MesasController {
-    MesasService;
-    constructor(MesasService) {
-        this.MesasService = MesasService;
+    mesasService;
+    constructor(mesasService) {
+        this.mesasService = mesasService;
     }
-    findAll() {
-        return this.MesasService.findAll();
+    listarMesas() {
+        return this.mesasService.findAll();
     }
 };
 exports.MesasController = MesasController;
@@ -26,10 +26,10 @@ __decorate([
     (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", void 0)
-], MesasController.prototype, "findAll", null);
+    __metadata("design:returntype", Array)
+], MesasController.prototype, "listarMesas", null);
 exports.MesasController = MesasController = __decorate([
-    (0, common_1.Controller)('mesas'),
+    (0, common_1.Controller)("mesas"),
     __metadata("design:paramtypes", [mesas_service_1.MesasService])
 ], MesasController);
 //# sourceMappingURL=mesas.controller.js.map

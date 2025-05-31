@@ -1,12 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
-import { MesasService } from './mesas.service';
+import { Controller, Get } from "@nestjs/common";
+import { Mesa, MesasService } from "./mesas.service";
 
-@Controller('mesas')
+@Controller("mesas")
 export class MesasController {
-    constructor(private readonly MesasService: MesasService) { }
+  constructor(private readonly mesasService: MesasService) {}
 
-    @Get()
-    findAll() {
-        return this.MesasService.findAll();
-    }
+  @Get()
+  listarMesas(): Mesa[] {
+    return this.mesasService.findAll();
+  }
 }

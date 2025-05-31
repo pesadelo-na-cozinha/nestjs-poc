@@ -1,9 +1,9 @@
-import { Module } from '@nestjs/common';
-import { MesasController } from './mesas.controller';
-import { MesasService } from './mesas.service';
+import { Module } from "@nestjs/common";
+import { MesasService } from "./mesas.service";
+import { MesasController } from "./mesas.controller";
 
 @Module({
+  providers: [MesasService],
   controllers: [MesasController],
-  providers: [MesasService]
 })
-export class MesasModule { }
+export class MesasModule {}

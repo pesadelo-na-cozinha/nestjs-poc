@@ -9,8 +9,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MesasService = void 0;
 const common_1 = require("@nestjs/common");
 let MesasService = class MesasService {
+    mesas = [
+        { id: 1, nome: "Mesa 1" },
+        { id: 2, nome: "Mesa 2" },
+    ];
     findAll() {
-        return 'Lista de mesas.';
+        return this.mesas;
     }
 };
 exports.MesasService = MesasService;

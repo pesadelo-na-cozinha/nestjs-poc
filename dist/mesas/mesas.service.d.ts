@@ -1,3 +1,8 @@
+export interface Mesa {
+    id: number;
+    nome: string;
+}
 export declare class MesasService {
-    findAll(): string;
+    private mesas;
+    findAll(): Mesa[];
 }

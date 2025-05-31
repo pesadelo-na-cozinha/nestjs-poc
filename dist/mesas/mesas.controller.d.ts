@@ -1,6 +1,6 @@
-import { MesasService } from './mesas.service';
+import { Mesa, MesasService } from "./mesas.service";
 export declare class MesasController {
-    private readonly MesasService;
-    constructor(MesasService: MesasService);
-    findAll(): string;
+    private readonly mesasService;
+    constructor(mesasService: MesasService);
+    listarMesas(): Mesa[];
 }
