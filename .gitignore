@@ -1,57 +1,56 @@
 # compiled output
-dist/*
-!/dist/v4
-!/dist/v5
-!/dist/v6
-!/dist/v7
-!/dist/v8
-!/dist/v9
-!/dist/v10
-
-/tmp
-/out-tsc
-
-# dependencies
+/dist
 /node_modules
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
 
 # IDEs and editors
 /.idea
 .project
 .classpath
 .c9/
-.vscode
 *.launch
 .settings/
 *.sublime-workspace
 
 # IDE - VSCode
-*.code-workspace
-/.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-.angular
-# e2e
-/e2e/*.js
-/e2e/*.map
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# System Files
-.DS_Store
-Thumbs.db
+# temp directory
+.temp
+.tmp
 
-# Mock API
-/api/node_modules
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# compiled templates
-src/app/homepage/pages/**/*.html
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
